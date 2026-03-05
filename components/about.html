@@ -1,65 +1,125 @@
 <section id="about" class="about">
-    <div class="mt-5">
+    <div class="container mt-3">
 
         <!-- Header -->
         <div class="text-center mb-5">
-            <span class="badge bg-secondary rounded-pill px-4 py-2 animate animate--down">
-                About Me
-            </span>
+            <span class="section-label animate animate--down">About Me</span>
         </div>
 
-        <div class="row align-items-center">
+        <div class="row align-items-center g-5">
             <!-- Image -->
-            <div class="col-12 col-lg-5 col-xl-6 mb-3 d-flex justify-content-center">
-                <img src="assets/img/about.png" alt="Darshan – Web Developer"
-                    class="rounded-4 img-fluid animate animate--left about-image" loading="lazy" decoding="async">
+            <div class="col-12 col-lg-5 col-xl-5 mb-3 d-flex justify-content-center animate animate--left">
+                <svg class="img-fluid about-image" xmlns="http://www.w3.org/2000/svg" viewBox="20 10 460 405" fill="none">
+                    <!-- Terminal window background -->
+                    <rect x="40" y="30" width="420" height="335" rx="16" fill="var(--bg-elevated)" stroke="var(--border)" stroke-width="1.5"/>
+
+                    <!-- Title bar -->
+                    <clipPath id="aboutTitleClip">
+                        <rect x="40" y="30" width="420" height="40"/>
+                    </clipPath>
+                    <rect x="40" y="30" width="420" height="50" rx="16" fill="var(--bg-secondary)" clip-path="url(#aboutTitleClip)"/>
+
+
+                    <!-- Window dots -->
+                    <circle cx="68" cy="50" r="6" fill="#ff5f57"/>
+                    <circle cx="88" cy="50" r="6" fill="#febc2e"/>
+                    <circle cx="108" cy="50" r="6" fill="#28c840"/>
+
+                    <!-- Title text -->
+                    <text x="250" y="55" text-anchor="middle" font-family="monospace" font-size="12" fill="var(--text-tertiary)">portfolio.js</text>
+
+                    <!-- Code lines -->
+                    <text x="70" y="105" font-family="monospace" font-size="13" fill="var(--text-tertiary)">1</text>
+                    <text x="95" y="105" font-family="monospace" font-size="13" fill="var(--text-primary)">const</text>
+                    <text x="140" y="105" font-family="monospace" font-size="13" fill="var(--text-secondary)">developer = {</text>
+
+                    <text x="70" y="130" font-family="monospace" font-size="13" fill="var(--text-tertiary)">2</text>
+                    <text x="115" y="130" font-family="monospace" font-size="13" fill="var(--text-secondary)">name:</text>
+                    <text x="168" y="130" font-family="monospace" font-size="13" fill="var(--text-primary)">'Darshan Vaghadiya',</text>
+
+                    <text x="70" y="155" font-family="monospace" font-size="13" fill="var(--text-tertiary)">3</text>
+                    <text x="115" y="155" font-family="monospace" font-size="13" fill="var(--text-secondary)">role:</text>
+                    <text x="168" y="155" font-family="monospace" font-size="13" fill="var(--text-primary)">'Full Stack Developer',</text>
+
+                    <text x="70" y="180" font-family="monospace" font-size="13" fill="var(--text-tertiary)">4</text>
+                    <text x="115" y="180" font-family="monospace" font-size="13" fill="var(--text-secondary)">stack:</text>
+                    <text x="175" y="180" font-family="monospace" font-size="13" fill="var(--text-tertiary)">[</text>
+                    <text x="185" y="180" font-family="monospace" font-size="13" fill="var(--text-primary)">'Laravel'</text>
+                    <text x="258" y="180" font-family="monospace" font-size="13" fill="var(--text-tertiary)">,</text>
+                    <text x="268" y="180" font-family="monospace" font-size="13" fill="var(--text-primary)">'Vue.js'</text>
+                    <text x="330" y="180" font-family="monospace" font-size="13" fill="var(--text-tertiary)">],</text>
+
+                    <text x="70" y="205" font-family="monospace" font-size="13" fill="var(--text-tertiary)">5</text>
+                    <text x="115" y="205" font-family="monospace" font-size="13" fill="var(--text-secondary)">available:</text>
+                    <text x="210" y="205" font-family="monospace" font-size="13" fill="#28c840">true</text>
+                    <text x="242" y="205" font-family="monospace" font-size="13" fill="var(--text-tertiary)">,</text>
+
+                    <text x="70" y="230" font-family="monospace" font-size="13" fill="var(--text-tertiary)">6</text>
+                    <text x="115" y="230" font-family="monospace" font-size="13" fill="var(--text-secondary)">location:</text>
+                    <text x="205" y="230" font-family="monospace" font-size="13" fill="var(--text-primary)">'Ahmedabad, India'</text>
+
+                    <text x="70" y="255" font-family="monospace" font-size="13" fill="var(--text-tertiary)">7</text>
+                    <text x="115" y="255" font-family="monospace" font-size="13" fill="var(--text-secondary)">email:</text>
+                    <text x="178" y="255" font-family="monospace" font-size="13" fill="var(--text-primary)">'darshanvaghadiya55@gmail.com'</text>
+
+                    <text x="70" y="280" font-family="monospace" font-size="13" fill="var(--text-tertiary)">8</text>
+                    <text x="95" y="280" font-family="monospace" font-size="13" fill="var(--text-secondary)">};</text>
+
+                    <text x="70" y="305" font-family="monospace" font-size="13" fill="var(--text-tertiary)">9</text>
+                    <!-- Cursor blink -->
+                    <rect x="95" y="294" width="8" height="15" fill="var(--text-primary)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;0;0.6" dur="1.2s" repeatCount="indefinite"/>
+                    </rect>
+
+                    <!-- Bottom bar -->
+                    <clipPath id="aboutBottomClip">
+                        <rect x="40" y="335" width="420" height="30"/>
+                    </clipPath>
+                    <rect x="40" y="325" width="420" height="40" rx="16" fill="var(--bg-secondary)" clip-path="url(#aboutBottomClip)"/>
+
+                    <circle cx="60" cy="350" r="4" fill="#28c840"/>
+                    <text x="72" y="354" font-family="monospace" font-size="10" fill="var(--text-tertiary)">main</text>
+                    <text x="400" y="354" font-family="monospace" font-size="10" fill="var(--text-tertiary)">UTF-8</text>
+                </svg>
             </div>
 
             <!-- Content -->
-            <div class="col-12 col-lg-7 col-xl-6 mb-3">
+            <div class="col-12 col-lg-7 col-xl-7 mb-3">
 
                 <h2 class="fw-bold mb-4 animate animate--up">
                     Curious about me? Here you go.
                 </h2>
 
-                <p class="small lh-lg animate animate--up delay-1">
-                    I’m a web developer who enjoys building reliable, scalable, and well-structured web applications
-                    that solve real problems. I care deeply about writing clean, maintainable code and creating systems
-                    that are easy to use, secure, and built to grow over time.
+                <p class="lh-lg animate animate--up delay-1">
+                    I build reliable, well-structured web applications that solve real problems — from
+                    database design and APIs to the final user experience. Clean code, secure systems,
+                    and architecture that scales is what I care about most.
                 </p>
 
-                <p class="small lh-lg animate animate--up delay-2">
-                    I began my journey during my academic years while pursuing my Bachelor’s degree in Computer
-                    Applications
-                    (BCA) at C. U. Shah University, where I graduated with a CGPA of 8.50 (2021–2024). Since then, I’ve
-                    worked
-                    on projects ranging from role-based platforms and RESTful APIs to payment systems and complex
-                    database
-                    architectures.
+                <p class="lh-lg animate animate--up delay-2">
+                    BCA graduate from C. U. Shah University (8.50 CGPA, 2021-2024). Since then I've
+                    shipped role-based platforms, RESTful APIs, payment integrations, and complex
+                    data systems in professional settings.
                 </p>
 
-                <p class="small lh-lg animate animate--up delay-3">
-                    I enjoy working on products end to end, from designing database structures and APIs to shaping the
-                    final
-                    user experience. I’m particularly interested in building systems that are efficient behind the
-                    scenes
-                    while remaining simple and intuitive for users.
-
+                <p class="lh-lg animate animate--up delay-3">
+                    I enjoy working across the full stack — designing databases, building backend logic,
+                    and shaping intuitive frontends. Efficiency behind the scenes, simplicity for the user.
                 </p>
 
-                <p class="small lh-lg animate animate--up delay-4">
-                    When I’m not coding, I like exploring new ideas, observing how products evolve, and learning from
-                    real-world systems and challenges. I believe consistency, curiosity, and long-term thinking are what
-                    make great developers.
-                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3 mb-3 animate animate--up delay-4">
+                    <span class="stat-pill">1+ Years Experience</span>
+                    <span class="stat-pill">5+ Projects Delivered</span>
+                    <span class="stat-pill">3+ Payment Integrations</span>
+                    <span class="stat-pill">4+ API Systems Built</span>
+                </div>
 
-                <p class="fw-medium mt-4 animate animate--up delay-5">
-                    I’m currently open to freelance opportunities and collaborations—feel free to reach out if you have
-                    an
-                    idea or a project in mind.
+                <p class="mt-3 animate animate--up delay-5">
+                    <span class="text-accent fw-medium">Always learning, always building — let's create something great.</span>
                 </p>
 
             </div>
         </div>
+
     </div>
 </section>

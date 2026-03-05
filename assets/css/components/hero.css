@@ -1,14 +1,76 @@
 .hero {
-    padding: 70px 60px;
-    background-color: var(--bg-color-primary) !important;
+    padding: 80px 40px 60px;
+    background-color: var(--bg-primary);
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero__text {
-    color: var(--text-color) !important;
+.hero__content {
+    text-align: center;
+    max-width: 680px;
+}
+
+.hero__greeting {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.hero__content h1 {
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    font-size: 4rem;
+    margin-top: 4px;
+}
+
+.hero__name {
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero__content .hero-sub {
+    font-size: 0.95rem;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.hero__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+}
+
+.hero__pill i {
+    font-size: 0.8rem;
 }
 
 @media (max-width: 767px) {
     .hero {
-        padding: 10px;
+        padding: 24px 16px 40px;
+        min-height: auto;
+    }
+
+    .hero__content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero__greeting {
+        font-size: 1.1rem;
     }
 }

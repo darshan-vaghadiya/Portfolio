@@ -1,6 +1,6 @@
 document.addEventListener("includesLoaded", () => {
     const navbar = document.querySelector(".navbar");
-    const navHeight = navbar?.offsetHeight || 100;
+    const navHeight = navbar?.offsetHeight || 64;
 
     const validIds = ["hero", "about", "skills", "project", "contact"];
 
@@ -31,5 +31,12 @@ document.addEventListener("includesLoaded", () => {
     );
 
     sections.forEach(section => observer.observe(section));
-});
 
+    // Back to top button
+    const backToTop = document.querySelector(".back-to-top");
+    if (backToTop) {
+        window.addEventListener("scroll", () => {
+            backToTop.classList.toggle("visible", window.scrollY > 400);
+        }, { passive: true });
+    }
+});
