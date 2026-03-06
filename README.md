@@ -4,7 +4,7 @@ A clean, responsive personal portfolio website built with HTML, CSS, JavaScript,
 
 ## Live Demo
 
-[darshanvaghadiya55-code.github.io/Portfolio](https://darshan-vaghadiya.github.io/Portfolio/)
+[darshan-vaghadiya.github.io/Portfolio](https://darshan-vaghadiya.github.io/Portfolio/)
 
 ## Features
 
