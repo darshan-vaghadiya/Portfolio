@@ -52,7 +52,7 @@ Portfolio/
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/darshanvaghadiya55-code/Portfolio.git
+   git clone https://github.com/darshan-vaghadiya/Portfolio.git
    ```
 2. Open `index.html` in your browser or use a local server (e.g. Live Server in VS Code)
 
